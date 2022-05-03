@@ -1,4 +1,4 @@
-My goal is to make daily predictions of stock return direction of a specific US stock which leads to a profitable trading strategy. This problem is especially difficult because if we assume the efficient market hypothesis, then no strategy would ever truly work. In addition, individual stocks are more susceptible to noise than indices. 
+My goal is to make daily predictions of the stock return direction for a specific US stock which leads to a profitable trading strategy. This problem is especially difficult because if we assume the efficient market hypothesis, then no strategy would ever truly work. In addition, individual stocks are more susceptible to noise than indices. 
 
 This <a href='https://www.sciencedirect.com/science/article/pii/S2405918820300143'>article</a> caught my eye immediately. L. Nevasalmi applied 5 different machine learning methods to make daily predictions of stock return volatility. The methods used appeared to have excellent long term predictability, as the test set contained data up to 11 years more recent than the training set. I transferred the features and methods used in their paper to my own binary classification problem for stock return direction, where random forest scored the most consistently. 
 
@@ -33,4 +33,4 @@ The average test accuracy is still slightly below the majority class make up. Ho
 
 Unfortunately, this <a href='https://www.sciencedirect.com/science/article/pii/S266682702100030X#tbl1'>article</a> had concluded that even with 0.65 out-of-sample accuracy score, the predictor was at times not able to outperform the buy and hold strategy when presented to a real trading experiment with higher volatility, when considering trading fees.
 
-Therefore, while the final method may present a profitable trading strategy, it is not guaranteed. Given brokerage commissions and a constantly changing stock market, basic strategies like buy and hold may have better performance. 
+Therefore, while the use of the final method will probably present profitable trading strategies, it is not guaranteed. Given brokerage commissions and a constantly changing stock market, basic strategies like buy and hold may have better performance. 
